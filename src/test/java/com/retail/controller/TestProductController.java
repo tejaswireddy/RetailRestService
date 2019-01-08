@@ -54,7 +54,7 @@ public class TestProductController{
 
        Mockito.when(buildproductservice.getProductInfo(Mockito.anyLong())).thenReturn(mockProduct);
 
-       MvcResult result = mockMvc.perform(MockMvcRequestBuilders.get("/product/13860428")
+       MvcResult result = mockMvc.perform(MockMvcRequestBuilders.get("/products/13860428")
                 .accept(MediaType.APPLICATION_JSON)).andReturn();
 
        assertEquals(200, result.getResponse().getStatus());
@@ -66,7 +66,7 @@ public class TestProductController{
     @Test
     public void getProductInfoTestNotFound() throws Exception {
 
-        RequestBuilder requestBuilder = MockMvcRequestBuilders.put("/product/138000")
+        RequestBuilder requestBuilder = MockMvcRequestBuilders.put("/products/138000")
                 .accept(MediaType.APPLICATION_JSON).content(request).contentType(MediaType.APPLICATION_JSON);
         MvcResult result = mockMvc.perform(requestBuilder).andReturn();
 
