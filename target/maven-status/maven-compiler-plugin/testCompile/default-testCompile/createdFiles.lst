@@ -1,0 +1,4 @@
+com/retail/controller/TestProductController.class
+com/retail/service/TestBuildProductService.class
+com/retail/service/TestProductNameServiceClass.class
+com/retail/AbstractTest.class
