@@ -34,7 +34,7 @@ https://developer.marklogic.com/products<br />
 #### How to insert a document into marklogic?<br />
 We need price information for a product in dstabase.For that we need to insert a document into database first.This can be done using below query in localhost:8000 queryConsole.Please find below.<br />
 
-
+<img width="1463" alt="screen shot 2019-01-07 at 5 47 52 pm" src="https://user-images.githubusercontent.com/5736706/50802817-8f0ac280-12ad-11e9-9e99-e8be4bf7883f.png">
 
 #### The ingested document can be viewed using below query:<br />
 fn:doc("/data/canonical/product/13860428/price.xml")
