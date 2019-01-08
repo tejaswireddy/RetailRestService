@@ -39,7 +39,7 @@ public class ProductController {
 
     }
 
-    @RequestMapping(value = "products/{productID:[\\d]+}", method = RequestMethod.GET)
+    @RequestMapping(value = "product/{productID:[\\d]+}", method = RequestMethod.GET)
     public Product getProductInfo(@PathVariable("productID") Long productID) throws Exception {
         //throw exception if product id is null or negative value
         if (productID == null || productID < 0) {
@@ -58,7 +58,7 @@ public class ProductController {
 
 
 
-    @RequestMapping(value = "products/{productID}", method = RequestMethod.PUT)
+    @RequestMapping(value = "product/{productID}", method = RequestMethod.PUT)
     public ResponseEntity<ExceptionResponse> updateProductPriceInfo(@PathVariable("productID") Long productID, @RequestBody Product product)
             throws Exception {
         ExceptionResponse error = new ExceptionResponse();
